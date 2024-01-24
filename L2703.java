@@ -3,7 +3,7 @@ import java.util.*;
 public class L2703 {
     final static Scanner sc = new Scanner(System.in);
 
-
+    static int s = 0;
 
     public static void main(String[] args) throws Throwable {
 
