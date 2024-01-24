@@ -21,9 +21,7 @@ public class L0113 {
             this.right = right;
         }
     }
-
     List<List<Integer>> list = new ArrayList<>();
-
     public List<List<Integer>> pathSum(TreeNode root, int targetSum) {
         if (root == null) {
             return new ArrayList<>();
@@ -32,7 +30,6 @@ public class L0113 {
         add(root, new ArrayList<>(), targetSum);
         return list;
     }
-
     public void add(TreeNode root, List<Integer> lis, int tar) {
         if (root.left == null && root.right == null) {
             if (tar - root.val == 0) {
