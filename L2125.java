@@ -18,16 +18,16 @@ public class L2125 {
         System.out.println(list);
         int ans = 0;
         for (int i = 0; i < list.size(); i += 1) {
-            if(i == list.size()-1){
+            if (i == list.size() - 1) {
                 break;
             }
-            ans += list.get(i) * list.get(i+1);
+            ans += list.get(i) * list.get(i + 1);
         }
         return ans;
     }
 
     public static void main(String[] args) throws Throwable {
-        String s[] = new String[]{"011001","000000","010100","001000"};
+        String s[] = new String[]{"011001", "000000", "010100", "001000"};
 
         long startTime = System.currentTimeMillis();
         System.out.println(numberOfBeams(s));

@@ -11,7 +11,7 @@ public class L0121 {
                 dt = prices[j] - prices[i];
                 max = Math.max(max, dt);
             }
-            if(prices[i] == min){
+            if (prices[i] == min) {
                 return max;
             }
         }
@@ -48,6 +48,7 @@ public class L0121 {
         long elapsedTime = endTime - startTime;
         System.out.println("Time elapsed in milliseconds: " + elapsedTime);
     }
+
     public static ArrayList<Integer> inp(String w) {
         ArrayList<Integer> list = new ArrayList<>();
         StringBuilder sb = new StringBuilder(w);

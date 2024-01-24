@@ -23,7 +23,6 @@ public class L0108 {
     }
 
 
-
     public static void main(String[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
 

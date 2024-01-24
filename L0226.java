@@ -27,7 +27,7 @@ public class L0226 {
         return root;
     }
 
-    public void swap(TreeNode root){
+    public void swap(TreeNode root) {
         if (root != null) {
             // Swap left and right child nodes
             TreeNode temp = root.left;

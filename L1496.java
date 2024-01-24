@@ -8,20 +8,20 @@ public class L1496 {
         list.add(new Integer[]{0, 0});
         int x = 0, y = 0;
         for (int i = 0; i < path.length(); i++) {
-            if(path.charAt(i) == 'W'){
+            if (path.charAt(i) == 'W') {
                 x--;
             }
-            if(path.charAt(i) == 'E'){
+            if (path.charAt(i) == 'E') {
                 x++;
             }
-            if(path.charAt(i) == 'N'){
+            if (path.charAt(i) == 'N') {
                 y++;
             }
-            if(path.charAt(i) == 'S'){
+            if (path.charAt(i) == 'S') {
                 y--;
             }
             for (int j = 0; j < list.size(); j++) {
-                if(list.get(j)[0] == x && list.get(j)[1] == y){
+                if (list.get(j)[0] == x && list.get(j)[1] == y) {
                     return true;
                 }
             }

@@ -22,6 +22,7 @@ public class L0907 {
         }
         return ans;
     }
+
     public static int sumSubarrayMins(int[] arr) {
         int mod = (int) 1e9 + 7;
         int n = arr.length;
@@ -56,6 +57,7 @@ public class L0907 {
 
         return (int) result;
     }
+
     /*1 2 3 4 5, len = 5
      * 1 2 3 4 5, 0 1 2 3 4
      * 12 23 34 45, 0 1 2 3

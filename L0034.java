@@ -14,7 +14,7 @@ public class L0034 {
             return out;
         }
         int res = Arrays.binarySearch(nums, target);
-        if(res < 0){
+        if (res < 0) {
             return out;
         }
         int a = 0, b = 0;
@@ -40,7 +40,7 @@ public class L0034 {
     }
 
     public static void main(String[] args) throws Throwable {
-        int nums[] = {5,7,7,8,8,10};
+        int nums[] = {5, 7, 7, 8, 8, 10};
         System.out.println(Arrays.toString(searchRange(nums, 6)));
     }
 }

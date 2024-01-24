@@ -4,7 +4,7 @@ public class L1838 {
     final static Scanner sc = new Scanner(System.in);
 
     public static int maxFrequency(int[] nums, int k) {
-        if(nums.length == 1){
+        if (nums.length == 1) {
             return 1;
         }
         return 0;

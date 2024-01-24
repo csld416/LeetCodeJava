@@ -22,7 +22,7 @@ public class L1160 {
             count[s.charAt(i)]--;
         }
         for (int i = 97; i < 123; i++) {
-            if(count[i] < 0){
+            if (count[i] < 0) {
                 return false;
             }
         }

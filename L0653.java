@@ -23,7 +23,7 @@ public class L0653 {
     }
 
     public static boolean findTarget(TreeNode root, int k) {
-        if(root.left == null && root.right == null){
+        if (root.left == null && root.right == null) {
             return false;
         }
         inorder(root);
@@ -34,14 +34,14 @@ public class L0653 {
             return false;
         }
         int j = list.size() - 1;
-        if(k <= list.get(j)){
+        if (k <= list.get(j)) {
             for (int i = 1; i < list.size(); i++) {
-                if(list.get(i-1) < k && k < list.get(i)){
+                if (list.get(i - 1) < k && k < list.get(i)) {
                     j = i;
                     break;
                 }
-                if(list.get(i) == k){
-                    j = i-1;
+                if (list.get(i) == k) {
+                    j = i - 1;
                 }
             }
         }

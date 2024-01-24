@@ -9,9 +9,9 @@ public class L1980 {
             inte.add(Integer.parseInt(nums[i], 2));
         }
         StringBuilder ans = new StringBuilder();
-        int max = (int)Math.pow(2, nums.length) - 1;
+        int max = (int) Math.pow(2, nums.length) - 1;
         for (int i = 0; i <= max; i++) {
-            if(!inte.contains(i)){
+            if (!inte.contains(i)) {
                 ans = new StringBuilder(Integer.toBinaryString(i));
             }
         }
@@ -52,10 +52,10 @@ public class L1980 {
         sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         for (int i = 0; i < w.length; i++) {
-                sb = new StringBuilder(w[i]);
-                sb.deleteCharAt(0);
-                sb.deleteCharAt(sb.length() - 1);
-                w[i] = (sb.toString());
+            sb = new StringBuilder(w[i]);
+            sb.deleteCharAt(0);
+            sb.deleteCharAt(sb.length() - 1);
+            w[i] = (sb.toString());
         }
         return w;
     }

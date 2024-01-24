@@ -79,7 +79,7 @@ public class L2385 {
         root.left.right.left = new TreeNode(9);
         root.left.right.right = new TreeNode(2);
         root.right.left = new TreeNode(10);
-        root.right.right =new TreeNode(6);
+        root.right.right = new TreeNode(6);
         long startTime = System.currentTimeMillis();
         System.out.println(amountOfTime(root, 3));
         long endTime = System.currentTimeMillis();

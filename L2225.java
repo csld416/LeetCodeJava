@@ -20,10 +20,10 @@ public class L2225 {
         ArrayList<Integer> zero = new ArrayList<>();
         ArrayList<Integer> one = new ArrayList<>();
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            if(entry.getValue() == 0){
+            if (entry.getValue() == 0) {
                 zero.add(entry.getKey());
             }
-            if(entry.getValue() == 1){
+            if (entry.getValue() == 1) {
                 one.add(entry.getKey());
             }
         }

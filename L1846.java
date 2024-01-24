@@ -13,7 +13,7 @@ public class L1846 {
         if (arr.length > max) {
             if (min == max) {
                 if (min == 1) {
-                     return 1;
+                    return 1;
                 }
                 return min + 1;
             }

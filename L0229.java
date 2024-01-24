@@ -19,9 +19,9 @@ public class L0229 {
             }
             count++;
             if (count > n) {
-                if(list.size() == 0){
+                if (list.size() == 0) {
                     list.add(nums[i]);
-                }else if (list.get(list.size() - 1) != nums[i]){
+                } else if (list.get(list.size() - 1) != nums[i]) {
                     list.add(nums[i]);
                 }
             }

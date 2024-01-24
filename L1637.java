@@ -11,7 +11,7 @@ public class L1637 {
         Arrays.sort(arr);
         int max = -1;
         for (int i = 1; i < arr.length; i++) {
-            max = Math.max(arr[i] - arr[i-1], max);
+            max = Math.max(arr[i] - arr[i - 1], max);
         }
         return max;
     }
@@ -39,10 +39,11 @@ public class L1637 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

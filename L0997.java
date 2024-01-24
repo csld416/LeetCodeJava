@@ -5,23 +5,23 @@ public class L0997 {
 
 
     public static int findJudge(int n, int[][] trust) {
-        if(n == 1){
+        if (n == 1) {
             return 1;
         }
-        if(n == 2){
-            if(trust.length == 1){
+        if (n == 2) {
+            if (trust.length == 1) {
                 return trust[0][1];
             }
         }
-        int per[] = new int[n+1];
+        int per[] = new int[n + 1];
         for (int i = 0; i < trust.length; i++) {
             per[trust[i][1]]++;
         }
         System.out.println(Arrays.toString(per));
         for (int i = 1; i < per.length; i++) {
-            if(per[i] == n-1){
+            if (per[i] == n - 1) {
                 for (int j = 0; j < trust.length; j++) {
-                    if(trust[j][0] == i){
+                    if (trust[j][0] == i) {
                         return -1;
                     }
                 }

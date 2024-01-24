@@ -7,19 +7,19 @@ public class L2391 {
         int[] sum = new int[garbage.length];
         sum[0] = 0;
         for (int i = 1; i < garbage.length; i++) {
-            sum[i] = sum[i-1] + travel[i-1];
+            sum[i] = sum[i - 1] + travel[i - 1];
         }
         int ans = 0;
         int m = 0, p = 0, g = 0;
         for (int i = 0; i < garbage.length; i++) {
             for (int j = 0; j < garbage[i].length(); j++) {
-                if(garbage[i].charAt(j) == 'M'){
+                if (garbage[i].charAt(j) == 'M') {
                     ans++;
                     m = Math.max(m, i);
-                }else if(garbage[i].charAt(j) == 'P'){
+                } else if (garbage[i].charAt(j) == 'P') {
                     ans++;
                     p = Math.max(p, i);
-                }else if(garbage[i].charAt(j) == 'G'){
+                } else if (garbage[i].charAt(j) == 'G') {
                     ans++;
                     g = Math.max(g, i);
                 }
@@ -31,7 +31,7 @@ public class L2391 {
 
     public static void main(String[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
-        System.out.println(garbageCollection(new String[]{"G","P","GP","GG"}, new int[]{2, 4, 3}));
+        System.out.println(garbageCollection(new String[]{"G", "P", "GP", "GG"}, new int[]{2, 4, 3}));
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
         System.out.println("Time elapsed in milliseconds: " + elapsedTime);
@@ -52,10 +52,11 @@ public class L2391 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

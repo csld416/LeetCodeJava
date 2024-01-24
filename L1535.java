@@ -6,7 +6,7 @@ public class L1535 {
 
     public static int getWinner_yeh(int arr[], int k) {
         int max = Arrays.stream(arr).max().getAsInt();
-        if(k > arr.length){
+        if (k > arr.length) {
             return max;
         }
         int var = 0;
@@ -16,19 +16,19 @@ public class L1535 {
         }
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(brr));
         for (int i = 0; i < arr.length; i++) {
-            if(list.get(0) == max){
+            if (list.get(0) == max) {
                 return max;
-            }else{
-                if(list.get(0) > list.get(1)){
+            } else {
+                if (list.get(0) > list.get(1)) {
                     var++;
                     list.remove(1);
-                }else{
+                } else {
                     list.remove(0);
                     var = 1;
                 }
             }
             System.out.println(list + "var = " + var);
-            if(var == k){
+            if (var == k) {
                 return list.get(0);
             }
         }
@@ -38,7 +38,7 @@ public class L1535 {
     public static void main(String[] args) throws Throwable {
         StringBuilder sb = new StringBuilder(sc.nextLine());
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String s[] = sb.toString().split(",");
         int k = Integer.parseInt(sc.nextLine());
         int a[] = new int[s.length];
@@ -54,7 +54,7 @@ public class L1535 {
 
 
     public static int getWinner1(int[] arr, int k) {
-        if(k > arr.length){
+        if (k > arr.length) {
             return Arrays.stream(arr).max().getAsInt();
         }
         int a, b;
@@ -86,6 +86,7 @@ public class L1535 {
             list.addAll(brr);
         }
     }
+
     public static int getWinner2(int arr[], int k) {
         int tmp[];
         if (k > arr.length) {

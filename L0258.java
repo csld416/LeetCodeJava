@@ -5,9 +5,9 @@ public class L0258 {
 
     public int addDigits(int num) {
         String s = Integer.toString(num);
-        if(s.length() == 1){
+        if (s.length() == 1) {
             return num;
-        }else{
+        } else {
             int sum = 0;
             for (int i = 0; i < s.length(); i++) {
                 sum += Integer.parseInt(Character.toString(s.charAt(i)));

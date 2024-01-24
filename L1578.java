@@ -14,9 +14,9 @@ public class L1578 {
                 j++;
                 while (colors.charAt(j) == c) {
                     list.add(neededTime[j]);
-                    if(j == colors.length()-1){
+                    if (j == colors.length() - 1) {
                         break;
-                    }else{
+                    } else {
                         j++;
                     }
                 }

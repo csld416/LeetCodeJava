@@ -5,7 +5,7 @@ public class L0058 {
 
     public int lengthOfLastWord(String s) {
         String w[] = s.split("\\s+");
-        return w[w.length-1].length();
+        return w[w.length - 1].length();
     }
 
     public static void main(String[] args) throws Throwable {

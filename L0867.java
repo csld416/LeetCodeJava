@@ -41,10 +41,11 @@ public class L0867 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

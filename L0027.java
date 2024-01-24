@@ -6,7 +6,7 @@ public class L0027 {
     public static int removeElement(int[] nums, int val) {
         int index = 0;
         for (int i = 0; i < nums.length; i++) {
-            if(nums[i] != val){
+            if (nums[i] != val) {
                 nums[index] = nums[i];
                 index++;
             }
@@ -38,10 +38,11 @@ public class L0027 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

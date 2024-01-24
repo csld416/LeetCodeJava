@@ -5,7 +5,7 @@ public class L1688 {
 
     public static int numberOfMatches(int n) {
         System.out.println("n = " + n);
-        if(n == 1){
+        if (n == 1) {
             return 0;
         }
         if (n > 0) {
@@ -22,7 +22,7 @@ public class L1688 {
 
     public static void main(String[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
-        System.out.println(numberOfMatches(7*2));
+        System.out.println(numberOfMatches(7 * 2));
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
         System.out.println("Time elapsed in milliseconds: " + elapsedTime);

@@ -6,8 +6,8 @@ public class L1561 {
     public static int maxCoins(int[] piles) {
         Arrays.sort(piles);
         int max = 0;
-        int l = piles.length/3;
-        for (int i = piles.length-2; i >= l; i-=2) {
+        int l = piles.length / 3;
+        for (int i = piles.length - 2; i >= l; i -= 2) {
             max += piles[i];
         }
         return max;
@@ -37,10 +37,11 @@ public class L1561 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

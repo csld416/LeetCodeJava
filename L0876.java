@@ -29,7 +29,7 @@ public class L0876 {
             }
             first = first.next;
             sec = sec.next.next;
-            if(sec == null){
+            if (sec == null) {
                 break;
             }
             if (sec.next != null) {

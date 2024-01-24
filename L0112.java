@@ -26,8 +26,8 @@ public class L0112 {
     List<Integer> list = new ArrayList<>();
 
     public boolean hasPathSum(TreeNode root, int targetSum) {
-        if(root == null){
-           return false;
+        if (root == null) {
+            return false;
         }
         list.clear();
         add(root);

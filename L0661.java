@@ -12,24 +12,24 @@ public class L0661 {
         }
         if (m == 1) {
             for (int i = 0; i < n; i++) {
-                if(i == 0){
-                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i+1]) / 2.0);
-                }else if(i == n-1){
-                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i-1]) / 2.0);
-                }else{
-                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i-1] + img[0][i+1]) / 3.0);
+                if (i == 0) {
+                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i + 1]) / 2.0);
+                } else if (i == n - 1) {
+                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i - 1]) / 2.0);
+                } else {
+                    arr[0][i] = (int) Math.floor((img[0][i] + img[0][i - 1] + img[0][i + 1]) / 3.0);
                 }
             }
             return arr;
         }
         if (n == 1) {
             for (int i = 0; i < m; i++) {
-                if(i == 0){
-                    arr[i][0] = (int) Math.floor((img[i][0] + img[i+1][0]) / 2.0);
-                }else if(i == m-1){
-                    arr[i][0] = (int) Math.floor((img[i][0] + img[i-1][0]) / 2.0);
-                }else{
-                    arr[i][0] = (int) Math.floor((img[i][0] + img[i-1][0] + img[i+1][0]) / 3.0);
+                if (i == 0) {
+                    arr[i][0] = (int) Math.floor((img[i][0] + img[i + 1][0]) / 2.0);
+                } else if (i == m - 1) {
+                    arr[i][0] = (int) Math.floor((img[i][0] + img[i - 1][0]) / 2.0);
+                } else {
+                    arr[i][0] = (int) Math.floor((img[i][0] + img[i - 1][0] + img[i + 1][0]) / 3.0);
                 }
             }
             return arr;

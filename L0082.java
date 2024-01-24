@@ -22,7 +22,7 @@ public class L0082 {
     }
 
     public static ListNode deleteDuplicates(ListNode head) {
-        if(head == null){
+        if (head == null) {
             return null;
         }
         ArrayList<Integer> jail = new ArrayList<>();
@@ -30,7 +30,7 @@ public class L0082 {
         ListNode ans = tmp;
         while (true) {
             if (head.next == null) {
-                if(!jail.contains(head.val)){
+                if (!jail.contains(head.val)) {
                     tmp.next = new ListNode(head.val);
                 }
                 break;
@@ -43,7 +43,7 @@ public class L0082 {
                         tmp.next = new ListNode(head.val);
                         head = head.next;
                         tmp = tmp.next;
-                    }else{
+                    } else {
                         head = head.next;
                     }
                 }

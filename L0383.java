@@ -7,10 +7,10 @@ public class L0383 {
         boolean boo = true;
         StringBuilder mag = new StringBuilder(magazine);
         for (int i = 0; i < ransomNote.length(); i++) {
-            if(!mag.toString().contains(Character.toString(ransomNote.charAt(i)))) {
+            if (!mag.toString().contains(Character.toString(ransomNote.charAt(i)))) {
                 boo = false;
                 break;
-            }else{
+            } else {
                 mag.deleteCharAt(mag.indexOf(Character.toString(ransomNote.charAt(i))));
 
             }

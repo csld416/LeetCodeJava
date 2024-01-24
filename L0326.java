@@ -4,16 +4,16 @@ public class L0326 {
     final static Scanner sc = new Scanner(System.in);
 
     public boolean isPowerOfThree(int n) {
-        if(n <= 0){
+        if (n <= 0) {
             return false;
         }
         double d = n;
-        while(d > 0){
-            if(d == 1){
+        while (d > 0) {
+            if (d == 1) {
                 return true;
             }
             d /= (3 * 1.0);
-            if(d != (int)d){
+            if (d != (int) d) {
                 return false;
             }
         }

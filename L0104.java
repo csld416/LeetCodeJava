@@ -23,7 +23,7 @@ public class L0104 {
     }
 
     public int maxDepth(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return 0;
         }
         int left = maxDepth(root.left);

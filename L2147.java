@@ -39,7 +39,7 @@ public class L2147 {
             for (int i = 1; i <= list.size() - 2; i += 2) {
                 ans = ans * (list.get(i + 1) - list.get(i)) % mod;
             }
-            return (int)ans % mod;
+            return (int) ans % mod;
         }
         return 0;
     }

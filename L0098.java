@@ -23,7 +23,7 @@ public class L0098 {
     }
 
     public static boolean isValidBST1(TreeNode root) {
-        if(root == null){
+        if (root == null) {
             return true;
         }
         if (isValidBST1(root.left) && isValidBST1(root.right)) {
@@ -49,26 +49,29 @@ public class L0098 {
         }
         return false;
     }
+
     static ArrayList<Integer> list = new ArrayList<>();
-    static void inorder(TreeNode root){
-        if(root != null){
+
+    static void inorder(TreeNode root) {
+        if (root != null) {
             inorder(root.left);
             list.add(root.val);
             inorder(root.right);
         }
     }
+
     public static boolean isValidBST(TreeNode root) {
         list.clear();
         inorder(root);
-        if(list.size() == 1){
+        if (list.size() == 1) {
             return true;
         }
         ArrayList<Integer> b = new ArrayList<>();
         b.addAll(list);
         Collections.sort(b);
-        if(b.equals(list)){
+        if (b.equals(list)) {
             for (int i = 1; i < list.size(); i++) {
-                if(Objects.equals(b.get(i), b.get(i - 1))){
+                if (Objects.equals(b.get(i), b.get(i - 1))) {
                     return false;
                 }
             }

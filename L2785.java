@@ -20,17 +20,17 @@ public class L2785 {
             if (vowel.contains(Character.toLowerCase(sb.charAt(i)))) {
                 vo.append(sb.charAt(i));
             } else {
-                ans.replace(i, i+1, Character.toString(sb.charAt(i)));
+                ans.replace(i, i + 1, Character.toString(sb.charAt(i)));
             }
         }
         char arr[] = vo.toString().toCharArray();
         Arrays.sort(arr);
         for (int i = 0, j = 0; i < sb.length(); i++) {
             if (vowel.contains(Character.toLowerCase(sb.charAt(i)))) {
-                ans.replace(i, i+1, Character.toString(arr[j]));
+                ans.replace(i, i + 1, Character.toString(arr[j]));
                 j++;
             }
-            if(Character.isAlphabetic(ans.charAt(i))){
+            if (Character.isAlphabetic(ans.charAt(i))) {
 
             }
         }

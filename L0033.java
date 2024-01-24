@@ -8,9 +8,9 @@ public class L0033 {
         for (int num : nums) {
             list.add(num);
         }
-        if(list.contains(target)){
+        if (list.contains(target)) {
             return list.indexOf(target);
-        }else{
+        } else {
             return -1;
         }
     }

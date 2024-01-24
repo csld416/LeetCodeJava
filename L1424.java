@@ -7,7 +7,7 @@ public class L1424 {
     public static int[] findDiagonalOrder(List<List<Integer>> nums) {
         int m = nums.size();
         ArrayList<Integer> list = new ArrayList<>();
-        if(m == 1){
+        if (m == 1) {
             int[] ans = new int[nums.get(0).size()];
             for (int i = 0; i < nums.get(0).size(); i++) {
                 ans[i] = nums.get(0).get(i);
@@ -18,7 +18,7 @@ public class L1424 {
         for (int i = 0; i < nums.size(); i++) {
             n = Math.max(n, nums.get(i).size());
         }
-        if(n == 1){
+        if (n == 1) {
             int[] ans = new int[nums.size()];
             for (int i = 0; i < nums.size(); i++) {
                 ans[i] = nums.get(i).get(0);
@@ -58,7 +58,7 @@ public class L1424 {
             } else {
                 for (int j = half, k = u; k <= submax; k++, j--) {
                     System.out.println(j + " " + k);
-                    if(j < 0){
+                    if (j < 0) {
                         continue;
                     }
                     if (map[j][k] >= 0) {

@@ -17,8 +17,8 @@ public class L1630 {
             Collections.sort(list);
             System.out.println(list);
             b = true;
-            for (int j = 1; j < list.size()-1; j++) {
-                if(list.get(j-1) + list.get(j+1) != list.get(j) * 2){
+            for (int j = 1; j < list.size() - 1; j++) {
+                if (list.get(j - 1) + list.get(j + 1) != list.get(j) * 2) {
                     System.out.println(list.get(j));
                     b = false;
                     break;
@@ -55,10 +55,11 @@ public class L1630 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

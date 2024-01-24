@@ -4,11 +4,10 @@ public class L1877 {
     final static Scanner sc = new Scanner(System.in);
 
 
-
     public static int minPairSum(int[] nums) {
         Arrays.sort(nums);
-        int pair[] = new int[nums.length/2];
-        for (int i = 0, j = nums.length-1; i < pair.length; i++, j--) {
+        int pair[] = new int[nums.length / 2];
+        for (int i = 0, j = nums.length - 1; i < pair.length; i++, j--) {
             pair[i] = nums[i] + nums[j];
         }
         int max = 0;
@@ -42,10 +41,11 @@ public class L1877 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

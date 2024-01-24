@@ -6,7 +6,7 @@ public class L1903 {
     public static String largestOddNumber(String num) {
         int ind = -1;
         for (int i = num.length() - 1; i > -1; i--) {
-            if (Integer.parseInt(num.substring(i, i+1)) % 2 == 1) {
+            if (Integer.parseInt(num.substring(i, i + 1)) % 2 == 1) {
                 ind = i;
                 break;
             }

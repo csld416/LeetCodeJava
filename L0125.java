@@ -12,8 +12,8 @@ public class L0125 {
                 sb.append(c);
             }
         }
-        for (int i = 0, j = sb.length()-1; i < sb.length() / 2; i++, j--) {
-            if(sb.charAt(i) != sb.charAt(j)){
+        for (int i = 0, j = sb.length() - 1; i < sb.length() / 2; i++, j--) {
+            if (sb.charAt(i) != sb.charAt(j)) {
                 return false;
             }
         }

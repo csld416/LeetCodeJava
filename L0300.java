@@ -8,7 +8,7 @@ public class L0300 {
         Arrays.fill(dp, 1);
         for (int i = dp.length - 1; i > -1; i--) {
             for (int j = i + 1; j < dp.length; j++) {
-                if(nums[i] < nums[j]){
+                if (nums[i] < nums[j]) {
                     dp[i] = Math.max(dp[i], 1 + dp[j]);
                 }
             }

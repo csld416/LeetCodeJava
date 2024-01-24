@@ -14,11 +14,11 @@ public class L0091 {
             if (c == '0') {
                 haszero = true;
             }
-            String s1 = s.charAt(i-1) + Character.toString(c);
-            if(Integer.parseInt(s1) <= 26){
-                if(s1.charAt(0) != '0'){
+            String s1 = s.charAt(i - 1) + Character.toString(c);
+            if (Integer.parseInt(s1) <= 26) {
+                if (s1.charAt(0) != '0') {
                     ans++;
-                }else{
+                } else {
                     ans--;
                 }
             }

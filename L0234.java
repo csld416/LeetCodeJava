@@ -22,13 +22,13 @@ public class L0234 {
 
     public boolean isPalindrome(ListNode head) {
         ArrayList<Integer> list = new ArrayList<>();
-        while(head != null){
+        while (head != null) {
             list.add(head.val);
             head = head.next;
         }
         boolean boo = true;
-        for (int i = 0, j = list.size()-1; i < list.size()/2; i++, j--) {
-            if(list.get(i) != list.get(j)){
+        for (int i = 0, j = list.size() - 1; i < list.size() / 2; i++, j--) {
+            if (list.get(i) != list.get(j)) {
                 return false;
             }
         }

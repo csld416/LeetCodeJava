@@ -4,7 +4,7 @@ public class L1897 {
     final static Scanner sc = new Scanner(System.in);
 
     public static boolean makeEqual(String[] words) {
-        if(words.length == 1){
+        if (words.length == 1) {
             return true;
         }
         int[] cnt = new int[128];
@@ -15,10 +15,10 @@ public class L1897 {
         }
         System.out.println(Arrays.toString(cnt));
         for (int i = 0; i < cnt.length; i++) {
-            if(cnt[i] > 0){
-              if(cnt[i] % words.length != 0){
-                  return false;
-              }
+            if (cnt[i] > 0) {
+                if (cnt[i] % words.length != 0) {
+                    return false;
+                }
             }
         }
 
@@ -27,7 +27,7 @@ public class L1897 {
 
     public static void main(String[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
-        System.out.println(makeEqual(new String[]{"caaaaa","aaaaaaaaa","a","bbb","bbbbbbbbb","bbb","cc","cccccccccccc","ccccccc","ccccccc","cc","cccc","c","cccccccc","c"}));
+        System.out.println(makeEqual(new String[]{"caaaaa", "aaaaaaaaa", "a", "bbb", "bbbbbbbbb", "bbb", "cc", "cccccccccccc", "ccccccc", "ccccccc", "cc", "cccc", "c", "cccccccc", "c"}));
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
         System.out.println("Time elapsed in milliseconds: " + elapsedTime);
@@ -48,10 +48,11 @@ public class L1897 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {

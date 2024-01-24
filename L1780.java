@@ -4,9 +4,8 @@ public class L1780 {
     final static Scanner sc = new Scanner(System.in);
 
 
-
     public boolean checkPowersOfThree(int n) {
-        if(n == 1){
+        if (n == 1) {
             return true;
         }
         int i = 0;

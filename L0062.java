@@ -11,10 +11,10 @@ public class L0062 {
         }
         for (int i = 1; i < map.length; i++) {
             for (int j = 1; j < map[i].length; j++) {
-                map[i][j] = map[i][j-1] + map[i-1][j];
+                map[i][j] = map[i][j - 1] + map[i - 1][j];
             }
         }
-        return map[map.length-1][map[0].length-1];
+        return map[map.length - 1][map[0].length - 1];
     }
 
     public static void main(String[] args) throws Throwable {

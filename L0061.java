@@ -45,10 +45,10 @@ public class L0061 {
         if (k > len) {
             k %= len;
         }
-        if(k % len ==0){
+        if (k % len == 0) {
             return head;
         }
-        if(len == 2 && k == 1){
+        if (len == 2 && k == 1) {
             ListNode tt = new ListNode(head.next.val);
             tt.next = new ListNode(head.val);
             return tt;
@@ -76,7 +76,7 @@ public class L0061 {
             System.out.print(head.val + " ");
             if (head.next != null) {
                 head = head.next;
-            }else{
+            } else {
                 break;
             }
         }

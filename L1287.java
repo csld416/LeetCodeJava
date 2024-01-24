@@ -4,16 +4,16 @@ public class L1287 {
     final static Scanner sc = new Scanner(System.in);
 
     public static int findSpecialInteger(int[] arr) {
-        int cri = arr.length/4;
+        int cri = arr.length / 4;
         Arrays.sort(arr);
         int count = 1;
         for (int i = 1; i < arr.length; i++) {
-            if(arr[i] == arr[i-1]){
+            if (arr[i] == arr[i - 1]) {
                 count++;
-                if(count > cri){
+                if (count > cri) {
                     return arr[i];
                 }
-            }else{
+            } else {
                 count = 1;
             }
         }
@@ -22,7 +22,7 @@ public class L1287 {
 
     public static void main(String[] args) throws Throwable {
         long startTime = System.currentTimeMillis();
-        int arr[] = new int[]{1,2,2,6,6,6,6,7,10};
+        int arr[] = new int[]{1, 2, 2, 6, 6, 6, 6, 7, 10};
         System.out.println(findSpecialInteger(arr));
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
@@ -44,10 +44,11 @@ public class L1287 {
         }
         return list;
     }
-    static int[] strtoarr(String s){
+
+    static int[] strtoarr(String s) {
         StringBuilder sb = new StringBuilder(s);
         sb.deleteCharAt(0);
-        sb.deleteCharAt(sb.length()-1);
+        sb.deleteCharAt(sb.length() - 1);
         String w[] = sb.toString().split(",");
         int arr[] = new int[w.length];
         for (int i = 0; i < arr.length; i++) {
